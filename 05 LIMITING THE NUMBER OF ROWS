@@ -1,0 +1,17 @@
+-- 05 LIMITING THE NUMBER OF ROWS OR OBSERVATIONS IN A QUERY BY USING "LIMIT"  
+--This query displays all the coustomers first, last names, phone numbers  and email addresses
+-- It also sort the customers first name in ascending order and  last name in descensding order using DESC*/
+--And finally show the first 20 observations 
+
+SELECT
+    FirstName AS 'Customer First Name',
+    LastName AS 'Customer Last Name',
+    Phone AS 'Customer Phone Number',
+    Email AS 'Customer Email Address'
+FROM
+    Customer
+ORDER BY
+    FirstName ASC,
+    LastName DESC
+LIMIT
+20
